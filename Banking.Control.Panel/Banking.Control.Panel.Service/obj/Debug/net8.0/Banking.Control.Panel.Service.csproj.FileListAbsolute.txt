@@ -1,0 +1,75 @@
+D:\Project\Banking.Control.Panel.API\Banking.Control.Panel.Service\bin\Debug\net8.0\Banking.Control.Panel.Service.deps.json
+D:\Project\Banking.Control.Panel.API\Banking.Control.Panel.Service\bin\Debug\net8.0\Banking.Control.Panel.Service.dll
+D:\Project\Banking.Control.Panel.API\Banking.Control.Panel.Service\bin\Debug\net8.0\Banking.Control.Panel.Service.pdb
+D:\Project\Banking.Control.Panel.API\Banking.Control.Panel.Service\bin\Debug\net8.0\Banking.Control.Panel.Model.dll
+D:\Project\Banking.Control.Panel.API\Banking.Control.Panel.Service\bin\Debug\net8.0\Banking.Control.Panel.Model.pdb
+D:\Project\Banking.Control.Panel.API\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.csproj.AssemblyReference.cache
+D:\Project\Banking.Control.Panel.API\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\Banking.Control.Panel.API\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.AssemblyInfoInputs.cache
+D:\Project\Banking.Control.Panel.API\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.AssemblyInfo.cs
+D:\Project\Banking.Control.Panel.API\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.csproj.CoreCompileInputs.cache
+D:\Project\Banking.Control.Panel.API\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking..9DB05F44.Up2Date
+D:\Project\Banking.Control.Panel.API\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.dll
+D:\Project\Banking.Control.Panel.API\Banking.Control.Panel.Service\obj\Debug\net8.0\refint\Banking.Control.Panel.Service.dll
+D:\Project\Banking.Control.Panel.API\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.pdb
+D:\Project\Banking.Control.Panel.API\Banking.Control.Panel.Service\obj\Debug\net8.0\ref\Banking.Control.Panel.Service.dll
+D:\Banking.Control.Panel\Banking.Control.Panel.Service\bin\Debug\net8.0\Banking.Control.Panel.Service.deps.json
+D:\Banking.Control.Panel\Banking.Control.Panel.Service\bin\Debug\net8.0\Banking.Control.Panel.Service.dll
+D:\Banking.Control.Panel\Banking.Control.Panel.Service\bin\Debug\net8.0\Banking.Control.Panel.Service.pdb
+D:\Banking.Control.Panel\Banking.Control.Panel.Service\bin\Debug\net8.0\Banking.Control.Panel.Model.dll
+D:\Banking.Control.Panel\Banking.Control.Panel.Service\bin\Debug\net8.0\Banking.Control.Panel.Model.pdb
+D:\Banking.Control.Panel\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.csproj.AssemblyReference.cache
+D:\Banking.Control.Panel\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Banking.Control.Panel\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.AssemblyInfoInputs.cache
+D:\Banking.Control.Panel\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.AssemblyInfo.cs
+D:\Banking.Control.Panel\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.csproj.CoreCompileInputs.cache
+D:\Banking.Control.Panel\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking..9DB05F44.Up2Date
+D:\Banking.Control.Panel\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.dll
+D:\Banking.Control.Panel\Banking.Control.Panel.Service\obj\Debug\net8.0\refint\Banking.Control.Panel.Service.dll
+D:\Banking.Control.Panel\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.pdb
+D:\Banking.Control.Panel\Banking.Control.Panel.Service\obj\Debug\net8.0\ref\Banking.Control.Panel.Service.dll
+D:\Project\Banking.Control.Panel\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.csproj.AssemblyReference.cache
+D:\Project\Banking.Control.Panel\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\Banking.Control.Panel\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.AssemblyInfoInputs.cache
+D:\Project\Banking.Control.Panel\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.AssemblyInfo.cs
+D:\Project\Banking.Control.Panel\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.csproj.CoreCompileInputs.cache
+D:\Project\Banking.Control.Panel\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.dll
+D:\Project\Banking.Control.Panel\Banking.Control.Panel.Service\obj\Debug\net8.0\refint\Banking.Control.Panel.Service.dll
+D:\Project\Banking.Control.Panel\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.pdb
+D:\Project\Banking.Control.Panel\Banking.Control.Panel.Service\bin\Debug\net8.0\Banking.Control.Panel.Service.deps.json
+D:\Project\Banking.Control.Panel\Banking.Control.Panel.Service\bin\Debug\net8.0\Banking.Control.Panel.Service.dll
+D:\Project\Banking.Control.Panel\Banking.Control.Panel.Service\bin\Debug\net8.0\Banking.Control.Panel.Service.pdb
+D:\Project\Banking.Control.Panel\Banking.Control.Panel.Service\bin\Debug\net8.0\Banking.Control.Panel.Model.dll
+D:\Project\Banking.Control.Panel\Banking.Control.Panel.Service\bin\Debug\net8.0\Banking.Control.Panel.Model.pdb
+D:\Project\Banking.Control.Panel\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking..9DB05F44.Up2Date
+D:\Project\Banking.Control.Panel\Banking.Control.Panel.Service\obj\Debug\net8.0\ref\Banking.Control.Panel.Service.dll
+D:\Project\Banking.Control.Panel 3\Banking.Control.Panel\Banking.Control.Panel.Service\bin\Debug\net8.0\Banking.Control.Panel.Service.deps.json
+D:\Project\Banking.Control.Panel 3\Banking.Control.Panel\Banking.Control.Panel.Service\bin\Debug\net8.0\Banking.Control.Panel.Service.dll
+D:\Project\Banking.Control.Panel 3\Banking.Control.Panel\Banking.Control.Panel.Service\bin\Debug\net8.0\Banking.Control.Panel.Service.pdb
+D:\Project\Banking.Control.Panel 3\Banking.Control.Panel\Banking.Control.Panel.Service\bin\Debug\net8.0\Banking.Control.Panel.Model.dll
+D:\Project\Banking.Control.Panel 3\Banking.Control.Panel\Banking.Control.Panel.Service\bin\Debug\net8.0\Banking.Control.Panel.Model.pdb
+D:\Project\Banking.Control.Panel 3\Banking.Control.Panel\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.csproj.AssemblyReference.cache
+D:\Project\Banking.Control.Panel 3\Banking.Control.Panel\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\Banking.Control.Panel 3\Banking.Control.Panel\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.AssemblyInfoInputs.cache
+D:\Project\Banking.Control.Panel 3\Banking.Control.Panel\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.AssemblyInfo.cs
+D:\Project\Banking.Control.Panel 3\Banking.Control.Panel\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.csproj.CoreCompileInputs.cache
+D:\Project\Banking.Control.Panel 3\Banking.Control.Panel\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking..9DB05F44.Up2Date
+D:\Project\Banking.Control.Panel 3\Banking.Control.Panel\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.dll
+D:\Project\Banking.Control.Panel 3\Banking.Control.Panel\Banking.Control.Panel.Service\obj\Debug\net8.0\refint\Banking.Control.Panel.Service.dll
+D:\Project\Banking.Control.Panel 3\Banking.Control.Panel\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.pdb
+D:\Project\Banking.Control.Panel 3\Banking.Control.Panel\Banking.Control.Panel.Service\obj\Debug\net8.0\ref\Banking.Control.Panel.Service.dll
+D:\Project\Banking.Control.Panel-12-8\Banking.Control.Panel.Service\bin\Debug\net8.0\Banking.Control.Panel.Service.deps.json
+D:\Project\Banking.Control.Panel-12-8\Banking.Control.Panel.Service\bin\Debug\net8.0\Banking.Control.Panel.Service.dll
+D:\Project\Banking.Control.Panel-12-8\Banking.Control.Panel.Service\bin\Debug\net8.0\Banking.Control.Panel.Service.pdb
+D:\Project\Banking.Control.Panel-12-8\Banking.Control.Panel.Service\bin\Debug\net8.0\Banking.Control.Panel.Model.dll
+D:\Project\Banking.Control.Panel-12-8\Banking.Control.Panel.Service\bin\Debug\net8.0\Banking.Control.Panel.Model.pdb
+D:\Project\Banking.Control.Panel-12-8\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.csproj.AssemblyReference.cache
+D:\Project\Banking.Control.Panel-12-8\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\Banking.Control.Panel-12-8\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.AssemblyInfoInputs.cache
+D:\Project\Banking.Control.Panel-12-8\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.AssemblyInfo.cs
+D:\Project\Banking.Control.Panel-12-8\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.csproj.CoreCompileInputs.cache
+D:\Project\Banking.Control.Panel-12-8\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking..9DB05F44.Up2Date
+D:\Project\Banking.Control.Panel-12-8\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.dll
+D:\Project\Banking.Control.Panel-12-8\Banking.Control.Panel.Service\obj\Debug\net8.0\refint\Banking.Control.Panel.Service.dll
+D:\Project\Banking.Control.Panel-12-8\Banking.Control.Panel.Service\obj\Debug\net8.0\Banking.Control.Panel.Service.pdb
+D:\Project\Banking.Control.Panel-12-8\Banking.Control.Panel.Service\obj\Debug\net8.0\ref\Banking.Control.Panel.Service.dll

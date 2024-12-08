@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Banking.Control.Panel\\Banking.Control.Panel.API\\Banking.Control.Panel.API\\wwwroot\\images\\42df3b8c-0be3-4805-8237-b29e1297242b.png",
+      "PackagePath": "staticwebassets\\images\\42df3b8c-0be3-4805-8237-b29e1297242b.png"
+    },
+    {
+      "Id": "D:\\Banking.Control.Panel\\Banking.Control.Panel.API\\Banking.Control.Panel.API\\wwwroot\\images\\cd22e058-183a-46f9-8755-f69a7f1f939a.png",
+      "PackagePath": "staticwebassets\\images\\cd22e058-183a-46f9-8755-f69a7f1f939a.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Banking.Control.Panel.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Banking.Control.Panel.API.props",
+      "PackagePath": "build\\Banking.Control.Panel.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Banking.Control.Panel.API.props",
+      "PackagePath": "buildMultiTargeting\\Banking.Control.Panel.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Banking.Control.Panel.API.props",
+      "PackagePath": "buildTransitive\\Banking.Control.Panel.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,28 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/Banking.Control.Panel.API/images/42df3b8c-0be3-4805-8237-b29e1297242b.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\42df3b8c-0be3-4805-8237-b29e1297242b.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-lv9plLo7oqUgOW3ERVB3WIU\u002BWt0dgnygcq9sqlUY1d4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"444752"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022lv9plLo7oqUgOW3ERVB3WIU\u002BWt0dgnygcq9sqlUY1d4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 08 Dec 2024 17:19:54 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Banking.Control.Panel.API/images/42df3b8c-0be3-4805-8237-b29e1297242b.qrfve4orcv.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\42df3b8c-0be3-4805-8237-b29e1297242b.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qrfve4orcv"},{"Name":"integrity","Value":"sha256-lv9plLo7oqUgOW3ERVB3WIU\u002BWt0dgnygcq9sqlUY1d4="},{"Name":"label","Value":"_content/Banking.Control.Panel.API/images/42df3b8c-0be3-4805-8237-b29e1297242b.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"444752"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022lv9plLo7oqUgOW3ERVB3WIU\u002BWt0dgnygcq9sqlUY1d4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 08 Dec 2024 17:19:54 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Banking.Control.Panel.API/images/cd22e058-183a-46f9-8755-f69a7f1f939a.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\cd22e058-183a-46f9-8755-f69a7f1f939a.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-lv9plLo7oqUgOW3ERVB3WIU\u002BWt0dgnygcq9sqlUY1d4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"444752"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022lv9plLo7oqUgOW3ERVB3WIU\u002BWt0dgnygcq9sqlUY1d4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 08 Dec 2024 17:19:54 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Banking.Control.Panel.API/images/cd22e058-183a-46f9-8755-f69a7f1f939a.qrfve4orcv.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\cd22e058-183a-46f9-8755-f69a7f1f939a.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qrfve4orcv"},{"Name":"integrity","Value":"sha256-lv9plLo7oqUgOW3ERVB3WIU\u002BWt0dgnygcq9sqlUY1d4="},{"Name":"label","Value":"_content/Banking.Control.Panel.API/images/cd22e058-183a-46f9-8755-f69a7f1f939a.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"444752"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022lv9plLo7oqUgOW3ERVB3WIU\u002BWt0dgnygcq9sqlUY1d4=\u0022"},{"Name":"Last-Modified","Value":"Sun, 08 Dec 2024 17:19:54 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

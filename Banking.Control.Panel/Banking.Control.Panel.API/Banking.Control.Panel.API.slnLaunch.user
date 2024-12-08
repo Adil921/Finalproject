@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "Banking.Control.Panel.API\\Banking.Control.Panel.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\Banking.Control.Panel.UI\\Banking.Control.Panel.UI.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "Qg2U/OLOi5Uhynadar79U6yvlVhqCCrmqUFSySiw/9M=",
+  "Source": "Banking.Control.Panel.API",
+  "BasePath": "_content/Banking.Control.Panel.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Banking.Control.Panel.API\\wwwroot",
+      "Source": "Banking.Control.Panel.API",
+      "ContentRoot": "D:\\Banking.Control.Panel\\Banking.Control.Panel.API\\Banking.Control.Panel.API\\wwwroot\\",
+      "BasePath": "_content/Banking.Control.Panel.API",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Banking.Control.Panel\\Banking.Control.Panel.API\\Banking.Control.Panel.API\\wwwroot\\images\\42df3b8c-0be3-4805-8237-b29e1297242b.png",
+      "SourceId": "Banking.Control.Panel.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Banking.Control.Panel\\Banking.Control.Panel.API\\Banking.Control.Panel.API\\wwwroot\\",
+      "BasePath": "_content/Banking.Control.Panel.API",
+      "RelativePath": "images/42df3b8c-0be3-4805-8237-b29e1297242b.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\42df3b8c-0be3-4805-8237-b29e1297242b.png"
+    },
+    {
+      "Identity": "D:\\Banking.Control.Panel\\Banking.Control.Panel.API\\Banking.Control.Panel.API\\wwwroot\\images\\cd22e058-183a-46f9-8755-f69a7f1f939a.png",
+      "SourceId": "Banking.Control.Panel.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Banking.Control.Panel\\Banking.Control.Panel.API\\Banking.Control.Panel.API\\wwwroot\\",
+      "BasePath": "_content/Banking.Control.Panel.API",
+      "RelativePath": "images/cd22e058-183a-46f9-8755-f69a7f1f939a.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\cd22e058-183a-46f9-8755-f69a7f1f939a.png"
+    }
+  ]
+}

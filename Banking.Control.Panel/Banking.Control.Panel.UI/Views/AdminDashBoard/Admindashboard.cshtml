@@ -1,0 +1,55 @@
+﻿@model Banking.Control.Panel.UI.Models.AdminDashBoard
+
+@{
+    ViewData["Title"] = "Client List";
+}
+
+<h1>Client List</h1>
+
+<!-- Search Form -->
+<form asp-controller="Admindashboard" method="get" action="@Url.Action("Index", "Client")">
+    <input type="text" name="searchText" value="@Model.SearchText" placeholder="Search Clients..." />
+    <button type="submit">Search</button>
+</form>
+
+<!-- Clients Table -->
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.ActionLink("First Name", "Index", new { sortBy = "FirstName", ascending = true })
+            </th>
+            <th>
+                @Html.ActionLink("Last Name", "Index", new { sortBy = "LastName", ascending = true })
+            </th>
+            <th>
+                @Html.ActionLink("Email", "Index", new { sortBy = "Email", ascending = true })
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var client in Model.Clients.ToList())
+        {
+            <tr>
+                <td>@client.FirstName</td>
+                <td>@client.LastName</td>
+                <td>@client.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Pagination -->
+<div class="pagination">
+    @if (Model.PageNumber > 1)
+    {
+        <a href="@Url.Action("Index", "Client", new { pageNumber = Model.PageNumber - 1, pageSize = Model.PageSize, searchText = Model.SearchText })">Previous</a>
+    }
+
+    <span>Page @Model.PageNumber</span>
+
+    @if (Model.Clients.Count() == Model.PageSize)
+    {
+        <a href="@Url.Action("Index", "Client", new { pageNumber = Model.PageNumber + 1, pageSize = Model.PageSize, searchText = Model.SearchText })">Next</a>
+    }
+</div>
