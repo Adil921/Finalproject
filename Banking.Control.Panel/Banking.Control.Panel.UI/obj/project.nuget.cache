@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QxdrK0l4pHI=",
+  "dgSpecHash": "WO3ra5TeH3U=",
   "success": true,
-  "projectFilePath": "D:\\Banking.Control.Panel\\Banking.Control.Panel.UI\\Banking.Control.Panel.UI.csproj",
+  "projectFilePath": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.UI\\Banking.Control.Panel.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adil.shah\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\adil.shah\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

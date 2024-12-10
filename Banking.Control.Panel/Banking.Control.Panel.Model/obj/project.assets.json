@@ -5172,11 +5172,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Banking.Control.Panel\\Banking.Control.Panel.Model\\Banking.Control.Panel.Model.csproj",
+      "projectUniqueName": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.Model\\Banking.Control.Panel.Model.csproj",
       "projectName": "Banking.Control.Panel.Model",
-      "projectPath": "D:\\Banking.Control.Panel\\Banking.Control.Panel.Model\\Banking.Control.Panel.Model.csproj",
+      "projectPath": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.Model\\Banking.Control.Panel.Model.csproj",
       "packagesPath": "C:\\Users\\adil.shah\\.nuget\\packages\\",
-      "outputPath": "D:\\Banking.Control.Panel\\Banking.Control.Panel.Model\\obj\\",
+      "outputPath": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.Model\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

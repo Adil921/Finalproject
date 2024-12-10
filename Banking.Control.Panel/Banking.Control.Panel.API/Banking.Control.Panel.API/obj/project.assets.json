@@ -5220,11 +5220,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Banking.Control.Panel\\Banking.Control.Panel.API\\Banking.Control.Panel.API\\Banking.Control.Panel.API.csproj",
+      "projectUniqueName": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.API\\Banking.Control.Panel.API\\Banking.Control.Panel.API.csproj",
       "projectName": "Banking.Control.Panel.API",
-      "projectPath": "D:\\Banking.Control.Panel\\Banking.Control.Panel.API\\Banking.Control.Panel.API\\Banking.Control.Panel.API.csproj",
+      "projectPath": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.API\\Banking.Control.Panel.API\\Banking.Control.Panel.API.csproj",
       "packagesPath": "C:\\Users\\adil.shah\\.nuget\\packages\\",
-      "outputPath": "D:\\Banking.Control.Panel\\Banking.Control.Panel.API\\Banking.Control.Panel.API\\obj\\",
+      "outputPath": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.API\\Banking.Control.Panel.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5246,11 +5246,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Banking.Control.Panel\\Banking.Control.Panel.Model\\Banking.Control.Panel.Model.csproj": {
-              "projectPath": "D:\\Banking.Control.Panel\\Banking.Control.Panel.Model\\Banking.Control.Panel.Model.csproj"
+            "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.Model\\Banking.Control.Panel.Model.csproj": {
+              "projectPath": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.Model\\Banking.Control.Panel.Model.csproj"
             },
-            "D:\\Banking.Control.Panel\\Banking.Control.Panel.Service\\Banking.Control.Panel.Service.csproj": {
-              "projectPath": "D:\\Banking.Control.Panel\\Banking.Control.Panel.Service\\Banking.Control.Panel.Service.csproj"
+            "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.Service\\Banking.Control.Panel.Service.csproj": {
+              "projectPath": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.Service\\Banking.Control.Panel.Service.csproj"
             }
           }
         }

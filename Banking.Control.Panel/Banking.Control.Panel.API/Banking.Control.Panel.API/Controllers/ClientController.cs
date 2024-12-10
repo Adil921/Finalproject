@@ -10,7 +10,7 @@ namespace Banking.Control.Panel.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class ClientController : ControllerBase
     {
         private readonly IClientService _client;

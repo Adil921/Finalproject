@@ -103,56 +103,6 @@ namespace Banking.Control.Panel.UI.Controllers
             }
         }
 
-        //public async Task<IActionResult> Register(Registration model)
-        //{
-
-        //    try
-        //    {
-        //        if (ModelState.IsValid)
-        //        {
-        //            var client = new Client
-        //            {
-
-        //                FirstName = model.FirstName,
-        //                LastName = model.LastName,
-        //                Email = model.Email,
-        //                Password = model.Password,
-        //                PersonalId = model.PersonalId,
-        //                ProfilePath = model.ProfilePath,
-        //                MobileNumber = model.MobileNumber,
-        //                Sex = model.Sex,
-        //                address = new List<Address>
-        //                {
-        //                    new Address
-        //            {
-        //               Country = model.Country,
-        //               City = model.City,
-        //               Street = model.Street,
-        //               ZipCode = model.ZipCode
-        //             }
-
-        //            }
-
-        //            };
-
-        //            // Send registration data to the API directly from the model
-        //            var response = await _httpClient.PostAsJsonAsync("http://localhost:5069/api/Client/Register", model);
-
-        //            if (response.IsSuccessStatusCode)
-        //            {
-        //                // Successful registration
-        //                TempData["SuccessMessage"] = "Registration successful. Please log in.";
-        //                return RedirectToAction("login", "Login"); // Redirect to login page
-        //            }
-        //        }
-        //        return View();
-        //    }
-        //    catch
-        //    {
-        //        // Handle unexpected errors
-        //        TempData["ErrorMessage"] = "An unexpected error occurred.";
-        //        return View(model);
-        //    }
-        //}
+        
     }
 }

@@ -47,7 +47,7 @@ namespace Banking.Control.Panel.UI.Controllers
 
                 if (role == "Admin")
                 {
-                    return RedirectToAction("Admindashboard", "AdminDashBoard");
+                    return RedirectToAction("AdminDashBoard", "AdminDashBoard");
                 }
                 else if (role == "User")
                 {
