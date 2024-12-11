@@ -20,18 +20,18 @@ namespace banking.control.panel.ui.controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> AdminDashboard(int userId = 1)
+        public async Task<IActionResult> AdminDashboard(int pageNum = 1, int pageSize = 10, string? sort = null)
         {
             try
             {
-                string? searchText = null;
-                string sortBy = "FirstName";
-                bool ascending = true;
-                int pageNumber = 1;
-                int pageSize = 10;
+                //string? searchText = null;
+                //string sortBy = "FirstName";
+                //bool ascending = true;
+                //int pageNumber = 1;
+                //int pageSize = 10;
                 // Construct the URL of your API
-                var apiUrl = $"http://localhost:5069/api/Client?userId={userId}&searchText={searchText}&sortBy={sortBy}&ascending={ascending}&pageNumber={pageNumber}&pageSize={pageSize}";
-
+                //var apiUrl = $"http://localhost:5069/api/Client?userId={userId}&searchText={searchText}&sortBy={sortBy}&ascending={ascending}&pageNumber={pageNumber}&pageSize={pageSize}";
+                var apiUrl = $"http://localhost:5069/api/Client/Pagination?pageNum={pageNum}&pageSize={pageSize}";
                 // Send GET request to your API
                 var response = await _httpclient.GetFromJsonAsync<Banking.Control.Panel.UI.Models.Pagination>(apiUrl);
 
@@ -63,7 +63,8 @@ namespace banking.control.panel.ui.controllers
             catch (Exception ex)
             {
                 // Handle any exceptions
-                return View("Error", new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+                //return View("Error", new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+                return View();
             }
         }
         [HttpPost]
@@ -105,30 +106,11 @@ namespace banking.control.panel.ui.controllers
             catch (Exception ex)
             {
                 // Handle any exceptions
-                return View("Error", new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+                //return View("Error", new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+                return View();
             }
+
         }
-
-
-        //public async Task<IActionResult> AdminDashboard(int pagenumber = 1, int pagesize = 10, string searchtext = "", string sortby = "firstname", bool ascending = true)
-        //{
-
-        //    // get paginated, sorted, and filtered client list
-        //    var response = await _httpclient.GetFromJsonAsync<Client>("http://localhost:5069/api/Client/");
-        //    var clients = await _httpclient.GetFromJsonAsync<IEnumerable<Client>>(1, searchtext, sortby, ascending, pagenumber, pagesize);
-
-        //    //// return view with the clients and pagination data
-        //    //var viewmodel = new clientviewmodel
-        //    //{
-        //    //    clients = clients,
-        //    //    searchtext = searchtext,
-        //    //    pagenumber = pagenumber,
-        //    //    pagesize = pagesize
-        //    //};
-
-        //    return View(response);
-        //}
-
 
     }
 }

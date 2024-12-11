@@ -68,7 +68,7 @@ namespace Banking.Control.Panel.UI.Controllers
                         //ProfilePath = profilePath,
                         MobileNumber = model.MobileNumber,
                         Sex = model.Sex,
-                        Role = "User",
+                        Role = model.Role,
                         IsActive = true,
                         Address = addresses,
 
@@ -81,7 +81,7 @@ namespace Banking.Control.Panel.UI.Controllers
                     {
                         // Successful registration
                         TempData["SuccessMessage"] = "Registration successful. Please log in.";
-                        return RedirectToAction("Login", "Login");
+                        return RedirectToAction("login", "Login");
                     }
                     else
                     {

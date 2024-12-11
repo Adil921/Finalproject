@@ -38,6 +38,8 @@ namespace Banking.Control.Panel.UI.Models
         public string City { get; set; }
         public string? Street { get; set; }
         public string? ZipCode { get; set; }
+        public string Role { get; set; }
+
         //public string AccountNumber { get; set; }
         //public decimal Balance { get; set; }
         //public string AccountType { get; set; }

@@ -1,4 +1,5 @@
-﻿using Banking.Control.Panel.Model;
+﻿using Banking.Control.Panel.API.Model;
+using Banking.Control.Panel.Model;
 using Banking.Control.Panel.Model.Model.Account;
 using Banking.Control.Panel.Model.Model.Client;
 using Banking.Control.Panel.Service;
@@ -10,7 +11,6 @@ namespace Banking.Control.Panel.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
     public class ClientController : ControllerBase
     {
         private readonly IClientService _client;
@@ -35,7 +35,7 @@ namespace Banking.Control.Panel.API.Controllers
             }
         }
 
-     
+        [Authorize]
         [HttpPost("Register")]
         [AllowAnonymous]
         public async Task<ActionResult<Client>> Register(Client client)
@@ -71,15 +71,14 @@ namespace Banking.Control.Panel.API.Controllers
             {
                 // Log the exception message (optional, should be logged for further investigation)
                 var message = ex.Message;
-             
+
                 // Throwing the exception again after logging it (optional depending on the requirement)
                 // Ideally, you should return an error response, not just rethrow
                 return StatusCode(500, "An error occurred while processing your request.");
             }
         }
 
-
-
+        [Authorize(Roles = "Admin,User")]
         [HttpGet("{id}")]
         public async Task<ActionResult<Client>> GetClientById(int id)
         {
@@ -124,7 +123,6 @@ namespace Banking.Control.Panel.API.Controllers
         }
 
         [HttpPut]
-
         public async Task<ActionResult<Client>> UpdateClient(UpdateClientRequest client)
         {
             try
@@ -194,6 +192,30 @@ namespace Banking.Control.Panel.API.Controllers
             {
                 var message = ex.Message;
                 throw;
+            }
+        }
+
+        [HttpGet("Pagination")]
+        public async Task<ActionResult<Pagination>> GetClientsPagination(
+     [FromQuery] int pageNum = 1,
+     [FromQuery] int pageSize = 10,
+     [FromQuery] string? sort = null)
+        {
+            try
+            {
+                var result = await _client.GetClientsPagination(pageNum, pageSize, sort);
+
+                // If the result is null, return a NotFound response
+                if (result == null)
+                {
+                    return NotFound(new { message = "No clients found." });
+                }
+
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "An error occurred while processing the request.", details = ex.Message });
             }
         }
 

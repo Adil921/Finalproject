@@ -101,8 +101,8 @@ namespace Banking.Control.Panel.Model.Migrations
 
             migrationBuilder.InsertData(
                 table: "Clients",
-                columns: new[] { "ClientId", "Email", "FirstName", "IsActive", "LastName", "MobileNumber", "Password", "PersonalId", "ProfilePath", "Role", "Sex" },
-                values: new object[] { 1, "admin@systems.com", "admin", false, "admin", "123456", "AQAAAAIAAYagAAAAEA4+WPlrzfd/cGMPqf5CJnbKak7ifHc0BtcZ5cKjveiZAAAAAAAAAAAAAAAAAAAAAA==", "123456789", null, "Admin", "Male" });
+                columns: new[] { "ClientId", "Email", "FirstName", "IsActive", "LastName", "MobileNumber", "Password", "PersonalId", "ProfilePath", "Role", "Sex", "Country" },
+                values: new object[] { 1, "adilshah@gmail.com", "Adil", true, "Shah", "+92 3893249432", "AQAAAAIAAYagAAAAEA4+WPlrzfd/cGMPqf5CJnbKak7ifHc0BtcZ5cKjveiZAAAAAAAAAAAAAAAAAAAAAA==", "123456789", null, "Admin", "Male", "Pakistan" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Accounts_ClientId",

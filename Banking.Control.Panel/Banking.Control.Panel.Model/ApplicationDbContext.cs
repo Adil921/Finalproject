@@ -30,18 +30,18 @@ namespace Banking.Control.Panel.Model
             _ = modelBuilder.Entity<Client>().HasData([
                 new Client{
                     ClientId = 1,
-                    FirstName = "admin",
-                    LastName = "admin",
-                    MobileNumber = "123456",
-                    PersonalId =   "123456789",
+                    FirstName = "Adil",
+                    LastName = "shah",
+                    MobileNumber = "+92 3483439712",
+                    PersonalId =   "12345678912",
                     Role= "Admin",
                     Sex = "Male",
-                       Email = "admin@systems.com",
-                    Password = PasswordHashHandler.HashPassword("admin123"),
+                    Email = "admin@systems.com",
+                    Password = PasswordHashHandler.HashPassword("abc123"),
                 }
                 ]);
 
-                       
+
         }
 
     }

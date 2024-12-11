@@ -60,6 +60,57 @@ namespace Banking.Control.Panel.Service
 
         }
 
+        public async Task<Pagination> GetClientsPagination(int pageNum, int pageSize, string? sort)
+        {
+            var totalClientsRecord = await _applicationDbContext.Clients.CountAsync();
+
+            var totalPages = (int)Math.Ceiling(totalClientsRecord / (double)pageSize);
+            var clients = await _applicationDbContext.Clients
+                .Include(e => e.Address)
+                .Include(e => e.Accounts)
+                .ToListAsync();
+
+
+            switch (sort)
+            {
+                case "asc":
+                    clients = clients.Skip((pageNum - 1) * pageSize)
+                         .Take(pageSize)
+                         .OrderBy(c => c.FirstName)
+                         .ToList();
+                    break;
+
+                case "desc":
+                    clients = clients.Skip((pageNum - 1) * pageSize)
+                         .Take(pageSize)
+                         .OrderBy(c => c.FirstName)
+                         .OrderByDescending(c => c.FirstName)
+                         .ToList();
+                    break;
+
+                default:
+                    clients = clients
+                         .Skip((pageNum - 1) * pageSize)
+                         .Take(pageSize)
+                         .ToList();
+
+                    break;
+
+            }
+
+            var response = new Pagination
+            {
+                TotalRecords = totalClientsRecord,
+                TotalPages = totalPages,
+                CurrentPage = pageNum,
+                PageSize = pageSize,
+                Clients = clients
+            };
+
+            return response;
+
+        }
+
         public async Task<IEnumerable<Client>> GetClients(int userId, string? searchText, string sortBy, bool ascending, int pageNumber, int pageSize)
         {
             IQueryable<Client> query = _applicationDbContext.Clients;
@@ -100,10 +151,10 @@ namespace Banking.Control.Panel.Service
             return client;
         }
 
-        public Task<Client> GetPagedData()
-        {
-            throw new NotImplementedException();
-        }
+        //public Task<Client> GetPagedData()
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         public async Task<Client> UpdateClient(UpdateClientRequest client)
         {

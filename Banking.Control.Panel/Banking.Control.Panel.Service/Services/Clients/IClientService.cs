@@ -17,6 +17,8 @@ namespace Banking.Control.Panel.Service
         public Task<Client> UpdateClientProfilePath(int clientId, string profilePath);
         public Task<IEnumerable<Client>> GetClients(int userId, string? searchText, string sortBy, bool ascending, int pageNumber, int pageSize);
         // public Task<ActionResult<Pagination>> GetPageData(int pageNumber, int pageSize);
+        public Task<Pagination> GetClientsPagination(int pageNum, int pageSize, string? sort);
+
 
 
     }

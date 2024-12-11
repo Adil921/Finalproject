@@ -180,3 +180,84 @@ body {
     background-color: #d4edda;
     color: #155724;
 }
+
+/*Styling for the AdminDashBoard*/
+/* style.css */
+
+/* Container Styles */
+.content-container {
+    padding: 20px;
+}
+
+/* Header Section */
+.header-container {
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    height:30px;
+  }
+
+/* Table Styles */
+.table {
+    margin-top: 20px;
+    width: 100%;
+}
+
+    .table th, .table td {
+        text-align: left;
+        padding: 10px;
+    }
+
+/* Pagination Styles */
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+    .pagination a {
+        margin: 0 5px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #007bff;
+    }
+
+        .pagination a.active {
+            background-color: #007bff;
+            color: white;
+        }
+
+/* Search History Dropdown */
+.search-history-list {
+    list-style-type: none;
+    padding-left: 0;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    .search-history-list li {
+        padding: 10px;
+        cursor: pointer;
+    }
+
+        .search-history-list li:hover {
+            background-color: #f0f0f0;
+        }
+
+/* Alert Styles */
+.alert {
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+

@@ -1,12 +1,389 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.API\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3E6A04-E278-42C4-90DB-7611A137D518}|..\\Banking.Control.Panel.UI\\Banking.Control.Panel.UI.csproj|d:\\finalproject\\banking.control.panel\\banking.control.panel.ui\\controllers\\userdashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3E6A04-E278-42C4-90DB-7611A137D518}|..\\Banking.Control.Panel.UI\\Banking.Control.Panel.UI.csproj|d:\\finalproject\\banking.control.panel\\banking.control.panel.ui\\controllers\\admindashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3E6A04-E278-42C4-90DB-7611A137D518}|..\\Banking.Control.Panel.UI\\Banking.Control.Panel.UI.csproj|d:\\finalproject\\banking.control.panel\\banking.control.panel.ui\\views\\userdashboard\\userdashoard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3E6A04-E278-42C4-90DB-7611A137D518}|..\\Banking.Control.Panel.UI\\Banking.Control.Panel.UI.csproj|d:\\finalproject\\banking.control.panel\\banking.control.panel.ui\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3E6A04-E278-42C4-90DB-7611A137D518}|..\\Banking.Control.Panel.UI\\Banking.Control.Panel.UI.csproj|d:\\finalproject\\banking.control.panel\\banking.control.panel.ui\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{123398A0-A1F8-4EC9-BA5F-0CB010CDE1BC}|..\\Banking.Control.Panel.Model\\Banking.Control.Panel.Model.csproj|d:\\finalproject\\banking.control.panel\\banking.control.panel.model\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3E6A04-E278-42C4-90DB-7611A137D518}|..\\Banking.Control.Panel.UI\\Banking.Control.Panel.UI.csproj|d:\\finalproject\\banking.control.panel\\banking.control.panel.ui\\controllers\\registrationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3E6A04-E278-42C4-90DB-7611A137D518}|..\\Banking.Control.Panel.UI\\Banking.Control.Panel.UI.csproj|d:\\finalproject\\banking.control.panel\\banking.control.panel.ui\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3E6A04-E278-42C4-90DB-7611A137D518}|..\\Banking.Control.Panel.UI\\Banking.Control.Panel.UI.csproj|d:\\finalproject\\banking.control.panel\\banking.control.panel.ui\\views\\admindashboard\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3E6A04-E278-42C4-90DB-7611A137D518}|..\\Banking.Control.Panel.UI\\Banking.Control.Panel.UI.csproj|d:\\finalproject\\banking.control.panel\\banking.control.panel.ui\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3E6A04-E278-42C4-90DB-7611A137D518}|..\\Banking.Control.Panel.UI\\Banking.Control.Panel.UI.csproj|d:\\finalproject\\banking.control.panel\\banking.control.panel.ui\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{123398A0-A1F8-4EC9-BA5F-0CB010CDE1BC}|..\\Banking.Control.Panel.Model\\Banking.Control.Panel.Model.csproj|d:\\finalproject\\banking.control.panel\\banking.control.panel.model\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{123398A0-A1F8-4EC9-BA5F-0CB010CDE1BC}|..\\Banking.Control.Panel.Model\\Banking.Control.Panel.Model.csproj|d:\\finalproject\\banking.control.panel\\banking.control.panel.model\\migrations\\20241209111108_bankdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB64E7AF-AE30-45F0-B747-7A8C9377A903}|..\\Banking.Control.Panel.Service\\Banking.Control.Panel.Service.csproj|d:\\finalproject\\banking.control.panel\\banking.control.panel.service\\services\\clients\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3E6A04-E278-42C4-90DB-7611A137D518}|..\\Banking.Control.Panel.UI\\Banking.Control.Panel.UI.csproj|d:\\finalproject\\banking.control.panel\\banking.control.panel.ui\\views\\registration\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3E6A04-E278-42C4-90DB-7611A137D518}|..\\Banking.Control.Panel.UI\\Banking.Control.Panel.UI.csproj|d:\\finalproject\\banking.control.panel\\banking.control.panel.ui\\models\\registration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{563794D7-2554-4D76-9226-14EF0CB7C63F}|Banking.Control.Panel.API\\Banking.Control.Panel.API.csproj|d:\\finalproject\\banking.control.panel\\banking.control.panel.api\\banking.control.panel.api\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{563794D7-2554-4D76-9226-14EF0CB7C63F}|Banking.Control.Panel.API\\Banking.Control.Panel.API.csproj|solutionrelative:banking.control.panel.api\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB64E7AF-AE30-45F0-B747-7A8C9377A903}|..\\Banking.Control.Panel.Service\\Banking.Control.Panel.Service.csproj|d:\\finalproject\\banking.control.panel\\banking.control.panel.service\\services\\clients\\iclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{123398A0-A1F8-4EC9-BA5F-0CB010CDE1BC}|..\\Banking.Control.Panel.Model\\Banking.Control.Panel.Model.csproj|d:\\finalproject\\banking.control.panel\\banking.control.panel.model\\model\\pagination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{123398A0-A1F8-4EC9-BA5F-0CB010CDE1BC}|..\\Banking.Control.Panel.Model\\Banking.Control.Panel.Model.csproj|d:\\finalproject\\banking.control.panel\\banking.control.panel.model\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{123398A0-A1F8-4EC9-BA5F-0CB010CDE1BC}|..\\Banking.Control.Panel.Model\\Banking.Control.Panel.Model.csproj|d:\\finalproject\\banking.control.panel\\banking.control.panel.model\\model\\account\\loginrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{123398A0-A1F8-4EC9-BA5F-0CB010CDE1BC}|..\\Banking.Control.Panel.Model\\Banking.Control.Panel.Model.csproj|d:\\finalproject\\banking.control.panel\\banking.control.panel.model\\model\\account\\loginresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E3E6A04-E278-42C4-90DB-7611A137D518}|..\\Banking.Control.Panel.UI\\Banking.Control.Panel.UI.csproj|d:\\finalproject\\banking.control.panel\\banking.control.panel.ui\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Users.cs",
+              "DocumentMoniker": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.UI\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "..\\Banking.Control.Panel.UI\\Models\\Users.cs",
+              "ToolTip": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.UI\\Models\\Users.cs",
+              "RelativeToolTip": "..\\Banking.Control.Panel.UI\\Models\\Users.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T16:00:05.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserDashoard.cshtml",
+              "DocumentMoniker": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.UI\\Views\\UserDashBoard\\UserDashoard.cshtml",
+              "RelativeDocumentMoniker": "..\\Banking.Control.Panel.UI\\Views\\UserDashBoard\\UserDashoard.cshtml",
+              "ToolTip": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.UI\\Views\\UserDashBoard\\UserDashoard.cshtml",
+              "RelativeToolTip": "..\\Banking.Control.Panel.UI\\Views\\UserDashBoard\\UserDashoard.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-10T15:45:51.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserDashBoardController.cs",
+              "DocumentMoniker": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.UI\\Controllers\\UserDashBoardController.cs",
+              "RelativeDocumentMoniker": "..\\Banking.Control.Panel.UI\\Controllers\\UserDashBoardController.cs",
+              "ToolTip": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.UI\\Controllers\\UserDashBoardController.cs",
+              "RelativeToolTip": "..\\Banking.Control.Panel.UI\\Controllers\\UserDashBoardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T15:40:09.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminDashBoardController.cs",
+              "DocumentMoniker": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.UI\\Controllers\\AdminDashBoardController.cs",
+              "RelativeDocumentMoniker": "..\\Banking.Control.Panel.UI\\Controllers\\AdminDashBoardController.cs",
+              "ToolTip": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.UI\\Controllers\\AdminDashBoardController.cs",
+              "RelativeToolTip": "..\\Banking.Control.Panel.UI\\Controllers\\AdminDashBoardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T09:11:38.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Registration.cs",
+              "DocumentMoniker": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.UI\\Models\\Registration.cs",
+              "RelativeDocumentMoniker": "..\\Banking.Control.Panel.UI\\Models\\Registration.cs",
+              "ToolTip": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.UI\\Models\\Registration.cs",
+              "RelativeToolTip": "..\\Banking.Control.Panel.UI\\Models\\Registration.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAkwCgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T10:05:27.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RegistrationController.cs",
+              "DocumentMoniker": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.UI\\Controllers\\RegistrationController.cs",
+              "RelativeDocumentMoniker": "..\\Banking.Control.Panel.UI\\Controllers\\RegistrationController.cs",
+              "ToolTip": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.UI\\Controllers\\RegistrationController.cs",
+              "RelativeToolTip": "..\\Banking.Control.Panel.UI\\Controllers\\RegistrationController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T09:41:58.848Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Client.cs",
+              "DocumentMoniker": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.Model\\Client.cs",
+              "RelativeDocumentMoniker": "..\\Banking.Control.Panel.Model\\Client.cs",
+              "ToolTip": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.Model\\Client.cs",
+              "RelativeToolTip": "..\\Banking.Control.Panel.Model\\Client.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwCwAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T10:20:31.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Client.cs",
+              "DocumentMoniker": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.UI\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "..\\Banking.Control.Panel.UI\\Models\\Client.cs",
+              "ToolTip": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.UI\\Models\\Client.cs",
+              "RelativeToolTip": "..\\Banking.Control.Panel.UI\\Models\\Client.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T14:30:40.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.UI\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "..\\Banking.Control.Panel.UI\\wwwroot\\css\\site.css",
+              "ToolTip": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.UI\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "..\\Banking.Control.Panel.UI\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAALQAAAAAAAAAAAAWwMoAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-10T14:52:37.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.UI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "..\\Banking.Control.Panel.UI\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.UI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "..\\Banking.Control.Panel.UI\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-10T15:31:57.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ClientService.cs",
+              "DocumentMoniker": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.Service\\Services\\Clients\\ClientService.cs",
+              "RelativeDocumentMoniker": "..\\Banking.Control.Panel.Service\\Services\\Clients\\ClientService.cs",
+              "ToolTip": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.Service\\Services\\Clients\\ClientService.cs",
+              "RelativeToolTip": "..\\Banking.Control.Panel.Service\\Services\\Clients\\ClientService.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAQwEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T09:58:13.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.UI\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "..\\Banking.Control.Panel.UI\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.UI\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "..\\Banking.Control.Panel.UI\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAcwC8AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T09:04:04.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AdminDashboard.cshtml",
+              "DocumentMoniker": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.UI\\Views\\AdminDashBoard\\AdminDashboard.cshtml",
+              "RelativeDocumentMoniker": "..\\Banking.Control.Panel.UI\\Views\\AdminDashBoard\\AdminDashboard.cshtml",
+              "ToolTip": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.UI\\Views\\AdminDashBoard\\AdminDashboard.cshtml",
+              "RelativeToolTip": "..\\Banking.Control.Panel.UI\\Views\\AdminDashBoard\\AdminDashboard.cshtml",
+              "ViewState": "AgIAAKUAAAAAAAAAAAAAALYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-10T13:43:37.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.Model\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "..\\Banking.Control.Panel.Model\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.Model\\ApplicationDbContext.cs",
+              "RelativeToolTip": "..\\Banking.Control.Panel.Model\\ApplicationDbContext.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAuwCYAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T14:45:12.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.UI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "..\\Banking.Control.Panel.UI\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.UI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "..\\Banking.Control.Panel.UI\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-10T09:18:02.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20241209111108_BankDb.cs",
+              "DocumentMoniker": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.Model\\Migrations\\20241209111108_BankDb.cs",
+              "RelativeDocumentMoniker": "..\\Banking.Control.Panel.Model\\Migrations\\20241209111108_BankDb.cs",
+              "ToolTip": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.Model\\Migrations\\20241209111108_BankDb.cs",
+              "RelativeToolTip": "..\\Banking.Control.Panel.Model\\Migrations\\20241209111108_BankDb.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwHsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T14:38:20.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ClientController.cs",
+              "DocumentMoniker": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.API\\Banking.Control.Panel.API\\Controllers\\ClientController.cs",
+              "RelativeDocumentMoniker": "Banking.Control.Panel.API\\Controllers\\ClientController.cs",
+              "ToolTip": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.API\\Banking.Control.Panel.API\\Controllers\\ClientController.cs",
+              "RelativeToolTip": "Banking.Control.Panel.API\\Controllers\\ClientController.cs",
+              "ViewState": "AgIAAL8AAAAAAAAAAADwv8MAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T09:38:00.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.UI\\Views\\Registration\\Register.cshtml",
+              "RelativeDocumentMoniker": "..\\Banking.Control.Panel.UI\\Views\\Registration\\Register.cshtml",
+              "ToolTip": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.UI\\Views\\Registration\\Register.cshtml",
+              "RelativeToolTip": "..\\Banking.Control.Panel.UI\\Views\\Registration\\Register.cshtml",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAAAFwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-10T14:25:52.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Pagination.cs",
+              "DocumentMoniker": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.Model\\Model\\Pagination.cs",
+              "RelativeDocumentMoniker": "..\\Banking.Control.Panel.Model\\Model\\Pagination.cs",
+              "ToolTip": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.Model\\Model\\Pagination.cs",
+              "RelativeToolTip": "..\\Banking.Control.Panel.Model\\Model\\Pagination.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T11:45:00.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Account.cs",
+              "DocumentMoniker": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.Model\\Account.cs",
+              "RelativeDocumentMoniker": "..\\Banking.Control.Panel.Model\\Account.cs",
+              "ToolTip": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.Model\\Account.cs",
+              "RelativeToolTip": "..\\Banking.Control.Panel.Model\\Account.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T13:06:16.789Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IClientService.cs",
+              "DocumentMoniker": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.Service\\Services\\Clients\\IClientService.cs",
+              "RelativeDocumentMoniker": "..\\Banking.Control.Panel.Service\\Services\\Clients\\IClientService.cs",
+              "ToolTip": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.Service\\Services\\Clients\\IClientService.cs",
+              "RelativeToolTip": "..\\Banking.Control.Panel.Service\\Services\\Clients\\IClientService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T13:08:57.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "LoginResponseModel.cs",
+              "DocumentMoniker": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.Model\\Model\\Account\\LoginResponseModel.cs",
+              "RelativeDocumentMoniker": "..\\Banking.Control.Panel.Model\\Model\\Account\\LoginResponseModel.cs",
+              "ToolTip": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.Model\\Model\\Account\\LoginResponseModel.cs",
+              "RelativeToolTip": "..\\Banking.Control.Panel.Model\\Model\\Account\\LoginResponseModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T11:24:32.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "LoginRequestModel.cs",
+              "DocumentMoniker": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.Model\\Model\\Account\\LoginRequestModel.cs",
+              "RelativeDocumentMoniker": "..\\Banking.Control.Panel.Model\\Model\\Account\\LoginRequestModel.cs",
+              "ToolTip": "D:\\FinalProject\\Banking.Control.Panel\\Banking.Control.Panel.Model\\Model\\Account\\LoginRequestModel.cs",
+              "RelativeToolTip": "..\\Banking.Control.Panel.Model\\Model\\Account\\LoginRequestModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T11:24:37.293Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

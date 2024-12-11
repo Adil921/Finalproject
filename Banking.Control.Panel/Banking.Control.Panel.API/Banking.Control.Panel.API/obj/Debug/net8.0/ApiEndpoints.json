@@ -311,6 +311,42 @@
   },
   {
     "ContainingType": "Banking.Control.Panel.API.Controllers.ClientController",
+    "Method": "GetClientsPagination",
+    "RelativePath": "api/Client/Pagination",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageNum",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "sort",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Banking.Control.Panel.API.Model.Pagination",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Banking.Control.Panel.API.Controllers.ClientController",
     "Method": "Register",
     "RelativePath": "api/Client/Register",
     "HttpMethod": "POST",

@@ -5,14 +5,13 @@
 <div class="content-container">
     <!-- Header Section with Create New Client Button -->
     <div class="header-container d-flex justify-content-between align-items-center">
-        <h2 class="d-inline">Admin Panel</h2>
+        <h2 class="d-inline">AdminDashBoard</h2>
 
         <!-- Button Container -->
-        <div class="button-container d-flex gap-2">
+        <div class="col-auto ml-auto d-flex align-items-center">
             <!-- Create New Client Button -->
-            <div class="dropdown ms-2">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-
+            <div class="dropdown me-2">
+                <button class="btn btn-secondary dropdown-toggle btn-equal" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Sort
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -20,24 +19,29 @@
                     <a class="dropdown-item" href="@Url.Action("Index", new { pageNum = Model.CurrentPage, pageSize = Model.PageSize , sort = "desc"})">Descending Order</a>
                 </div>
             </div>
-            <a href="/Admin/Create" class="btn btn-primary btn-sm">+ New Client</a>
+
+            <button style="margin-bottom:10px" href="/AdminDashBoard/AdminDashboard" class="btn btn-primary btn-equal me-2">Add Client</button>
 
             <!-- Logout Button -->
-            <button onclick="logout()" class="btn btn-danger btn-sm">
-
+            <button onclick="logout()" class="btn btn-danger btn-equal">
                 Logout
             </button>
-
-
         </div>
+
+        <style>
+            .btn-equal {
+                width: 120px; /* Set a fixed width */
+                height: 50px; /* Set a fixed height */
+            }
+        </style>
     </div>
 
-    @if (TempData["AdminMessage"] != null)
+    @if (TempData["SuccessMessage"] != null)
 
     {
         <div class="alert alert-success">
 
-            @TempData["AdminMessage"]
+            @TempData["SuccessMessage"]
         </div>
 
     }
@@ -51,7 +55,7 @@
         </div>
 
     }
-    <form asp-controller="" asp-action="Search" method="get" class="d-flex w-50 position-relative">
+    <form asp-controller="AdminDashBoard" asp-action="" method="get" class="d-flex w-50 position-relative">
         <input class="form-control me-2" type="search" name="searchRecord" placeholder="Search" aria-label="Search" id="searchInput" onclick="PerformSearch()">
         <ul id="searchHistory" class="search-history-list" style="display:none;">
 
@@ -106,9 +110,10 @@
                     <th>Last Name</th>
                     <th>Email</th>
                     <th>Personal Id</th>
-                    <th>Profile Photo</th>
+                  @*   <th>Profile Photo</th> *@
                     <th>Mobile Number</th>
                     <th>Sex</th>
+                    <th>Country</th>
                     <th>Actions</th>
                 </tr>
             </thead>
@@ -153,7 +158,7 @@
 
                                 {
 
-                                    @item.City
+                                    @item.Country
 
                                 }
 
@@ -168,7 +173,7 @@
                         </td>
                         <td>
                             <!-- View Details - Admin Controller -->
-                            <a href="@Url.Action("UserDetails", "Admin", new { id = client.ClientId })" class="btn btn-info btn-sm">
+                            <a href="@Url.Action("UserDetails", "AdminDashBoard", new { id = client.ClientId })" class="btn btn-info btn-sm">
                                 <i class="fas fa-eye"></i>
                             </a> |
 
@@ -176,11 +181,6 @@
                             <a href="@Url.Action("UpdateClient", "Update", new { id = client.ClientId })" class="btn btn-warning btn-sm">
                                 <i class="fas fa-edit"></i>
                             </a> |
-
-                            <!-- Add Account of Existing client - Admin Controller -->
-                            <a href="@Url.Action("AddAccount", "Admin", new { id = client.ClientId })" class="btn btn-warning btn-sm">
-                                <i class="fas fa-plus"></i>
-                            </a>
 
                     </tr>
 
@@ -272,6 +272,3 @@
 
     }
 </script>
-
-
-has context menu
