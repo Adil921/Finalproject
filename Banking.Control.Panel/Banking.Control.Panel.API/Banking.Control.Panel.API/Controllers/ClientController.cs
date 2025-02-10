@@ -6,6 +6,7 @@ using Banking.Control.Panel.Service;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 
 namespace Banking.Control.Panel.API.Controllers
 {
@@ -50,7 +51,11 @@ namespace Banking.Control.Panel.API.Controllers
                 }
 
                 // Assign a default role to the client (in case it's not provided)
-                client.Role = "User";
+
+                if (client.Role == null)
+                {
+                    client.Role = "User";
+                }
 
                 // Try to add the client to the system by calling the AddClient method
                 var response = await _client.AddClient(client);
@@ -78,7 +83,26 @@ namespace Banking.Control.Panel.API.Controllers
             }
         }
 
-        [Authorize(Roles = "Admin,User")]
+        //[HttpPost]
+        //[AllowAnonymous]
+        //public async Task<ActionResult> ForgotPassword([Required] string email)
+        //{
+        //    var response = await _client.FindByEmailAsync(email);
+        //    if (response != null)
+        //    {
+        //        var token = await _client.GeneratePasswordResertTokenAsync(response);
+        //        var link = Url.Action("ResetPassword", "Authentication", new { token, email = response.Email }, Request.Scheme);
+        //    }
+        //    return Ok(response);
+        //}
+
+        //[HttpGet]
+        //public async Task<ActionResult> ForgotPassword(string token, string email)
+        //{
+        //    var model = new 
+        //}
+
+        //[Authorize(Roles = "Admin,User")]
         [HttpGet("{id}")]
         public async Task<ActionResult<Client>> GetClientById(int id)
         {
@@ -122,12 +146,12 @@ namespace Banking.Control.Panel.API.Controllers
             }
         }
 
-        [HttpPut]
-        public async Task<ActionResult<Client>> UpdateClient(UpdateClientRequest client)
+        [HttpPut("{id}")]
+        public async Task<ActionResult<Client>> UpdateClient(int id, UpdateClientRequest client)
         {
             try
             {
-                var response = await _client.UpdateClient(client);
+                var response = await _client.UpdateClient(id, client);
                 if (response == null)
                 {
                     return NotFound();

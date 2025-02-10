@@ -21,7 +21,7 @@ namespace Banking.Control.Panel.UI.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult> Userdashboard()
+        public async Task<ActionResult> UserDashboard()
         {
             try
 
@@ -36,14 +36,14 @@ namespace Banking.Control.Panel.UI.Controllers
                 var handler = new JwtSecurityTokenHandler();
                 var jwtToken = handler.ReadJwtToken(token);
                 _httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
-                // var userEmail = jwtToken?.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value;
-                var Client = jwtToken?.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
+                var userEmail = jwtToken?.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value;
+                //var Client = jwtToken?.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier)?.Value;
                 // Get client data using the clientId passed to the URL
                 // var response = await _httpClient.GetFromJsonAsync<Client>(URL + userId);
-                var clients = await _httpClient.GetFromJsonAsync<List<Client>>("");
+                var clients = await _httpClient.GetFromJsonAsync<List<Client>>("http://localhost:5069/api/Client");
                 if (clients != null)
                 {
-                    var filterClient = clients.Where(e => e.ClientId.ToString() == Client).FirstOrDefault();
+                    var filterClient = clients.Where(e => e.Email == userEmail).FirstOrDefault();
                     // Populate the view with client data
                     ViewData["ClientId"] = filterClient.ClientId;
                     ViewData["Email"] = filterClient.Email;

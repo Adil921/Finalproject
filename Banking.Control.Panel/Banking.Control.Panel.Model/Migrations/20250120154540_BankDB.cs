@@ -5,7 +5,7 @@
 namespace Banking.Control.Panel.Model.Migrations
 {
     /// <inheritdoc />
-    public partial class BankDb : Migration
+    public partial class BankDB : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -38,7 +38,7 @@ namespace Banking.Control.Panel.Model.Migrations
                 {
                     AccountId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    ClientId = table.Column<int>(type: "int", nullable: false),
+                    ClientId = table.Column<int>(type: "int", nullable: true),
                     AccountNumber = table.Column<int>(type: "int", nullable: false),
                     AccountType = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Balance = table.Column<double>(type: "float", nullable: true),
@@ -51,8 +51,7 @@ namespace Banking.Control.Panel.Model.Migrations
                         name: "FK_Accounts_Clients_ClientId",
                         column: x => x.ClientId,
                         principalTable: "Clients",
-                        principalColumn: "ClientId",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "ClientId");
                 });
 
             migrationBuilder.CreateTable(
@@ -65,8 +64,7 @@ namespace Banking.Control.Panel.Model.Migrations
                     City = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Street = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     ZipCode = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ClientId = table.Column<int>(type: "int", nullable: false),
-                    IsActive = table.Column<bool>(type: "bit", nullable: false)
+                    ClientId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -101,8 +99,8 @@ namespace Banking.Control.Panel.Model.Migrations
 
             migrationBuilder.InsertData(
                 table: "Clients",
-                columns: new[] { "ClientId", "Email", "FirstName", "IsActive", "LastName", "MobileNumber", "Password", "PersonalId", "ProfilePath", "Role", "Sex", "Country" },
-                values: new object[] { 1, "adilshah@gmail.com", "Adil", true, "Shah", "+92 3893249432", "AQAAAAIAAYagAAAAEA4+WPlrzfd/cGMPqf5CJnbKak7ifHc0BtcZ5cKjveiZAAAAAAAAAAAAAAAAAAAAAA==", "123456789", null, "Admin", "Male", "Pakistan" });
+                columns: new[] { "ClientId", "Email", "FirstName", "IsActive", "LastName", "MobileNumber", "Password", "PersonalId", "ProfilePath", "Role", "Sex" },
+                values: new object[] { 1, "adilshah@gmail.com", "Adil", false, "shah", "+92 3483439712", "AQAAAAIAAYagAAAAEGS2JZNk0BEkIR7lEuw4GtdXBeWGfLD3vXlTnz3/C+DSAAAAAAAAAAAAAAAAAAAAAA==", "12345678912", null, "Admin", "Male" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_Accounts_ClientId",

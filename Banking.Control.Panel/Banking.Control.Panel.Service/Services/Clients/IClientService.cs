@@ -11,7 +11,7 @@ namespace Banking.Control.Panel.Service
         public Task<List<Client>> GetAllClient(int pageNumber, int pageSize);
         public Task<Client> GetClientById(int id);
         public Task<Client> AddClient(Client client);
-        public Task<Client> UpdateClient(UpdateClientRequest client);
+        public Task<Client> UpdateClient(int id, UpdateClientRequest client);
         public Task<Client> DeleteClient(int id);
         public Task<string> Authenticate(LoginRequestModel request);
         public Task<Client> UpdateClientProfilePath(int clientId, string profilePath);

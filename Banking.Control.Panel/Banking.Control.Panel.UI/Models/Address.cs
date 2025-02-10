@@ -11,6 +11,5 @@ namespace Banking.Control.Panel.UI.Models
         public string City { get; set; }
         public string? Street { get; set; }
         public string ZipCode { get; set; }
-        public bool IsActive { get; set; }
     }
 }

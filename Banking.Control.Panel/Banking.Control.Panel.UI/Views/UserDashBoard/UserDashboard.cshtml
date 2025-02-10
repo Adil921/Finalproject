@@ -1,4 +1,5 @@
-﻿@{
+﻿@* @model Banking.Control.Panel.UI.Models.Registration *@
+@{
     ViewData["Title"] = "Welcome to your Profile!";
 }
 
@@ -55,10 +56,10 @@
                             <th>Gender</th>
                             <td>@ViewData["Sex"]</td>
                         </tr>
-                        <tr>
+                      @*   <tr>
                             <th>Address</th>
                             <td>@ViewData["Street"], @ViewData["City"], @ViewData["Country"], @ViewData["ZipCode"]</td>
-                        </tr>
+                        </tr> *@
                     </table>
                 </div>
             </div>
@@ -98,7 +99,7 @@
 <!-- Edit and Delete Actions -->
 <div class="form-buttons d-flex justify-content-between gap-2 mt-3">
     <!-- Update Profile Button -->
-    <a href="@Url.Action("UpdateProfile", "User", new { id = ViewData["ClientId"] })" class="btn btn-warning btn-sm">
+    <a href="@Url.Action("UpdateClient", "UpdateClient", new { id = ViewData["ClientId"] })" class="btn btn-warning btn-sm">
         <i class="fas fa-edit"></i> Edit Profile
     </a>
 
@@ -123,4 +124,3 @@
     }
 </script>
 
-has context menu

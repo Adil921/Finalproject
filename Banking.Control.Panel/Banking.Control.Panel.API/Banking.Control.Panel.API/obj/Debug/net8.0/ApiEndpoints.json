@@ -156,32 +156,6 @@
   },
   {
     "ContainingType": "Banking.Control.Panel.API.Controllers.ClientController",
-    "Method": "UpdateClient",
-    "RelativePath": "api/Client",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "client",
-        "Type": "Banking.Control.Panel.Model.Model.Client.UpdateClientRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "Banking.Control.Panel.Model.Client",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "Banking.Control.Panel.API.Controllers.ClientController",
     "Method": "GetAllClient",
     "RelativePath": "api/Client",
     "HttpMethod": "GET",
@@ -242,6 +216,37 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Banking.Control.Panel.Model.Client",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Banking.Control.Panel.API.Controllers.ClientController",
+    "Method": "UpdateClient",
+    "RelativePath": "api/Client/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "client",
+        "Type": "Banking.Control.Panel.Model.Model.Client.UpdateClientRequest",
         "IsRequired": true
       }
     ],
@@ -395,15 +400,15 @@
   {
     "ContainingType": "Banking.Control.Panel.API.Controllers.SearchController",
     "Method": "GetLastSearchHistory",
-    "RelativePath": "api/Search/latestsearchhistory/{clientId}",
+    "RelativePath": "api/Search/GetLastSearchHistory",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "clientId",
-        "Type": "System.Int32",
-        "IsRequired": true
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

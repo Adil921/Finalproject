@@ -40,9 +40,6 @@ namespace Banking.Control.Panel.Model.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("IsActive")
-                        .HasColumnType("bit");
-
                     b.Property<string>("Street")
                         .HasColumnType("nvarchar(max)");
 
@@ -75,7 +72,7 @@ namespace Banking.Control.Panel.Model.Migrations
                     b.Property<double?>("Balance")
                         .HasColumnType("float");
 
-                    b.Property<int>("ClientId")
+                    b.Property<int?>("ClientId")
                         .HasColumnType("int");
 
                     b.Property<bool>("IsActive")
@@ -147,12 +144,12 @@ namespace Banking.Control.Panel.Model.Migrations
                         {
                             ClientId = 1,
                             Email = "admin@systems.com",
-                            FirstName = "admin",
+                            FirstName = "Adil",
                             IsActive = false,
-                            LastName = "admin",
-                            MobileNumber = "123456",
-                            Password = "AQAAAAIAAYagAAAAEA4+WPlrzfd/cGMPqf5CJnbKak7ifHc0BtcZ5cKjveiZAAAAAAAAAAAAAAAAAAAAAA==",
-                            PersonalId = "123456789",
+                            LastName = "shah",
+                            MobileNumber = "+92 3483439712",
+                            Password = "AQAAAAIAAYagAAAAEGS2JZNk0BEkIR7lEuw4GtdXBeWGfLD3vXlTnz3/C+DSAAAAAAAAAAAAAAAAAAAAAA==",
+                            PersonalId = "12345678912",
                             Role = "Admin",
                             Sex = "Male"
                         });
@@ -195,9 +192,7 @@ namespace Banking.Control.Panel.Model.Migrations
                 {
                     b.HasOne("Banking.Control.Panel.Model.Client", "Client")
                         .WithMany("Accounts")
-                        .HasForeignKey("ClientId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("ClientId");
 
                     b.Navigation("Client");
                 });

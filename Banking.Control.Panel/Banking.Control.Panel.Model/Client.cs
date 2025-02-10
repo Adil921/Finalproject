@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Banking.Control.Panel.Model.Model.Client;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;

@@ -40,8 +40,8 @@ namespace Banking.Control.Panel.UI.Models
         public string? ZipCode { get; set; }
         public string Role { get; set; }
 
-        //public string AccountNumber { get; set; }
-        //public decimal Balance { get; set; }
+       // public string AccountNumber { get; set; }
+        public decimal Balance { get; set; }
         //public string AccountType { get; set; }
 
     }
