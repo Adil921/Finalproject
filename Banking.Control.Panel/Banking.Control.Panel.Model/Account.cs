@@ -16,7 +16,7 @@ namespace Banking.Control.Panel.Model
 
         // Foreign key for Client
         [ForeignKey("ClientId")]
-        public int ClientId { get; set; }
+        public int? ClientId { get; set; }
         public int AccountNumber { get; set; }
         public string AccountType { get; set; }
         public double? Balance { get; set; }

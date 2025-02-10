@@ -52,15 +52,15 @@ namespace Banking.Control.Panel.Service
             var client = await _applicationDbContext.Clients
             .Include(e => e.Address)
             .Include(e => e.Accounts)
-             .Skip((pageNumber - 1) * pageSize)
-             .Take(pageSize)
-                      .ToListAsync();
+            .Skip((pageNumber - 1) * pageSize)
+            .Take(pageSize)
+            .ToListAsync();
             return client;
 
 
         }
 
-        public async Task<Pagination> GetClientsPagination(int pageNum, int pageSize, string? sort)
+        public async Task<Pagination> GetClientsPagination(int pageNum, int pageSize, string sort)
         {
             var totalClientsRecord = await _applicationDbContext.Clients.CountAsync();
 
@@ -147,54 +147,71 @@ namespace Banking.Control.Panel.Service
 
         public async Task<Client> GetClientById(int id)
         {
-            var client = await _applicationDbContext.Clients.FindAsync($"{id}");
+            var client = _applicationDbContext.Clients.Where(e => e.ClientId == id).Include(e => e.Address).Include(e => e.Accounts).FirstOrDefault();
             return client;
         }
 
-        //public Task<Client> GetPagedData()
-        //{
-        //    throw new NotImplementedException();
-        //}
 
-        public async Task<Client> UpdateClient(UpdateClientRequest client)
+
+        public async Task<Client> UpdateClient(int id, UpdateClientRequest client)
         {
-            var dbClient = await _applicationDbContext.Clients.Include(e => e.Address)
-           .Include(e => e.Accounts)
-           .FirstOrDefaultAsync(e => e.ClientId == client.ClientId);
+            // Fetch the client from the database along with its related addresses and accounts.
+            var dbClient = await _applicationDbContext.Clients
+                .Where(e => e.ClientId == id)
+                .Include(e => e.Address)
+                .Include(e => e.Accounts)
+                .FirstOrDefaultAsync();
 
-            if (dbClient != null)
+            if (dbClient == null)
             {
-                dbClient!.FirstName = client.FirstName;
-                dbClient.LastName = client.LastName;
-                dbClient.PersonalId = client.PersonalId;
-                dbClient.MobileNumber = client.MobileNumber;
-                dbClient.Role = client.Role;
-                dbClient.Sex = client.Sex;
+                // If the client is not found, return null or handle it accordingly (e.g., NotFound).
+                return null;
+            }
 
-                if (client.Address != null)
+            // Update the client details.
+            dbClient.FirstName = client.FirstName;
+            dbClient.LastName = client.LastName;
+            dbClient.PersonalId = client.PersonalId;
+            dbClient.MobileNumber = client.MobileNumber;
+            dbClient.Role = client.Role;
+            dbClient.Sex = client.Sex;
+
+            if (client.Address != null)
+            {
+                foreach (var address in client.Address)
                 {
-                    foreach (var address in client.Address)
+                    // Look for existing address by comparing the address ID.
+                    var existingAddress = dbClient.Address
+                        .FirstOrDefault(a => a.AddressId == address.AddressId);
+
+                    if (existingAddress != null)
                     {
-                        var existingAddress = dbClient.Address.FirstOrDefault(a => a.AddressId == address.AddressId);
-                        if (existingAddress != null)
-                        {
-                            existingAddress.IsActive = address.IsActive;
-                            existingAddress.Country = address.Country;
-                            existingAddress.City = address.City;
-                            existingAddress.Street = address.Street;
-                            existingAddress.ZipCode = address.ZipCode;
-                            _applicationDbContext.Addresses.Update(existingAddress);
-                        }
-                        else
-                        {
-                            _applicationDbContext.Addresses.Add(address);
-                        }
+                        // If the address exists, update it.
+                        //existingAddress.IsActive = address.IsActive;
+                        existingAddress.Country = address.Country;
+                        existingAddress.City = address.City;
+                        existingAddress.Street = address.Street;
+                        existingAddress.ZipCode = address.ZipCode;
+                        // Ensure the foreign key is correctly set
+                        existingAddress.ClientId = dbClient.ClientId;
+
+                        _applicationDbContext.Addresses.Update(existingAddress);
                     }
-                    await _applicationDbContext.SaveChangesAsync();
+                    else
+                    {
+                        // If it's a new address, add it and ensure the foreign key is set correctly.
+                        address.ClientId = dbClient.ClientId;  // Ensure the address is linked to the correct client
+                        _applicationDbContext.Addresses.Add(address);
+                    }
                 }
             }
+
+            // Save changes for both the client and associated addresses.
+            await _applicationDbContext.SaveChangesAsync();
+
             return dbClient;
         }
+
 
         public async Task<Client> UpdateClientProfilePath(int clientId, string profilePath)
         {
@@ -222,6 +239,7 @@ namespace Banking.Control.Panel.Service
 
                 new Claim(ClaimTypes.Email, request.Email),
                 new Claim(ClaimTypes.Role, userAccount.Role),
+                new Claim(ClaimTypes.NameIdentifier, userAccount.ClientId.ToString())
             };
 
 
@@ -243,7 +261,9 @@ namespace Banking.Control.Panel.Service
             return new JwtSecurityTokenHandler().WriteToken(token);
 
         }
-
+      
+     
     }
 }
+
 

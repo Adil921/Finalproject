@@ -34,18 +34,7 @@ namespace Banking.Control.Panel.UI.Controllers
             {
                 if (ModelState.IsValid)
                 {
-                    // Process the profile photo (if any)
-                    //string profilePath = null;
-                    //if (model.ProfilePhoto != null)
-                    //{
-                    //    var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "uploads", model.ProfilePhoto.FileName);
-                    //    using (var stream = new FileStream(filePath, FileMode.Create))
-                    //    {
-                    //        await model.ProfilePhoto.CopyToAsync(stream);
-                    //    }
-                    //    profilePath = "/uploads/" + model.ProfilePhoto.FileName; // Save the path for storage
-                    //}
-
+                   
                     //Create the Client object to send to the API
                     var addresses = new List<Banking.Control.Panel.UI.Models.Address>();
                     var address = new Banking.Control.Panel.UI.Models.Address
@@ -58,14 +47,14 @@ namespace Banking.Control.Panel.UI.Controllers
                     addresses.Add(address);
 
 
-                    var client = new Client
+                    var client = new Banking.Control.Panel.UI.Models.Client
                     {
                         FirstName = model.FirstName,
                         LastName = model.LastName,
                         Email = model.Email,
                         Password = model.Password,
                         PersonalId = model.PersonalId,
-                        //ProfilePath = profilePath,
+                        //ProfilePath = model.ProfilePath,
                         MobileNumber = model.MobileNumber,
                         Sex = model.Sex,
                         Role = model.Role,

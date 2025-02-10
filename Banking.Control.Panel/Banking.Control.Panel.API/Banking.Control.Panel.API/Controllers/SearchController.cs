@@ -15,22 +15,22 @@ namespace Banking.Control.Panel.API.Controllers
 
         // Endpoint to get the last 3 search terms for a specific client
 
-        [HttpGet("latestsearchhistory/{clientId}")]
-        public async Task<IActionResult> GetLastSearchHistory(int clientId)
+        [HttpGet("GetLastSearchHistory")]
+        public async Task<IActionResult> GetLastSearchHistory(string name)
         {
             try
             {
                 // Attempt to retrieve the last 3 search terms for the specified client
-                var searchTerms = await _search.GetLastSearchHistory(clientId);
+                var searchTerms = await _search.FilterClient(name);
 
                 // If no search terms are found, return a NotFound response with a message
-                if (searchTerms == null || !searchTerms.Any())
+                if (searchTerms.Value == null)
                 {
                     return NotFound("No search history available for this client.");
                 }
 
                 // Return the search terms with a 200 OK status if found
-                return Ok(searchTerms);
+                return Ok(searchTerms.Value);
             }
             catch (Exception)
             {

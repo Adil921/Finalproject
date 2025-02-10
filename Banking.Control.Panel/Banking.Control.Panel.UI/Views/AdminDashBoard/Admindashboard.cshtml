@@ -1,7 +1,15 @@
 ﻿@using Banking.Control.Panel.UI.Models
 
 @model Banking.Control.Panel.UI.Models.Pagination
-<!-- Main Content Container -->
+@* @if (TempData["SuccessMessage"] != null)
+
+{
+        <div class="alert alert-success">
+
+        @TempData["SuccessMessage"]
+        </div>
+}
+ *@<!-- Main Content Container -->
 <div class="content-container">
     <!-- Header Section with Create New Client Button -->
     <div class="header-container d-flex justify-content-between align-items-center">
@@ -15,17 +23,18 @@
                     Sort
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="@Url.Action("Index", new { pageNum = Model.CurrentPage, pageSize = Model.PageSize , sort = "asc"})">Ascending Order</a>
-                    <a class="dropdown-item" href="@Url.Action("Index", new { pageNum = Model.CurrentPage, pageSize = Model.PageSize , sort = "desc"})">Descending Order</a>
+                    <a class="dropdown-item" href="@Url.Action("AdminDashboard", new { pageNum = Model.CurrentPage, pageSize = Model.PageSize , sort = "asc"})">Ascending Order</a>
+                    <a class="dropdown-item" href="@Url.Action("AdminDashboard", new { pageNum = Model.CurrentPage, pageSize = Model.PageSize , sort = "desc"})">Descending Order</a>
                 </div>
             </div>
 
-            <button style="margin-bottom:10px" href="/AdminDashBoard/AdminDashboard" class="btn btn-primary btn-equal me-2">Add Client</button>
+            <button onclick="AddClient()" style="margin-bottom:10px" class="btn btn-primary btn-equal me-2">Add Client</button>
 
             <!-- Logout Button -->
             <button onclick="logout()" class="btn btn-danger btn-equal">
                 Logout
             </button>
+            <button onclick="Profile()" style="margin-bottom:10px; margin-left:8px" class="btn btn-primary btn-equal me-2">Profile</button>
         </div>
 
         <style>
@@ -63,7 +72,7 @@
 
             {
 
-                var search = ViewData["SearchHistory"] as List<Search>;
+                var search = ViewData["SearchHistory"] as List<Banking.Control.Panel.UI.Models.SearchHistory>;
 
                 if (search != null && search.Any() && search.Count > 0)
 
@@ -110,11 +119,11 @@
                     <th>Last Name</th>
                     <th>Email</th>
                     <th>Personal Id</th>
-                  @*   <th>Profile Photo</th> *@
+                    @*   <th>Profile Photo</th> *@
                     <th>Mobile Number</th>
                     <th>Sex</th>
                     <th>Country</th>
-                    <th>Actions</th>
+                    @*  <th>Actions</th> *@
                 </tr>
             </thead>
             <tbody>
@@ -171,16 +180,16 @@
 
                             }
                         </td>
-                        <td>
-                            <!-- View Details - Admin Controller -->
-                            <a href="@Url.Action("UserDetails", "AdminDashBoard", new { id = client.ClientId })" class="btn btn-info btn-sm">
-                                <i class="fas fa-eye"></i>
-                            </a> |
+                        @*  <td> *@
+                        <!-- View Details - Admin Controller -->
+                        @* <a href="@Url.Action("UserDetails", "AdminDashBoard", new { id = client.ClientId })" class="btn btn-info btn-sm">
+                <i class="fas fa-eye"></i>
+                </a> | *@
 
-                            <!-- Update Client - Update Controller -->
-                            <a href="@Url.Action("UpdateClient", "Update", new { id = client.ClientId })" class="btn btn-warning btn-sm">
-                                <i class="fas fa-edit"></i>
-                            </a> |
+                        <!-- Update Client - Update Controller -->
+                        @*  <a href="@Url.Action("UpdateClient", "Update", new { id = client.ClientId })" class="btn btn-warning btn-sm">
+                <i class="fas fa-edit"></i>
+                </a> | *@
 
                     </tr>
 
@@ -270,5 +279,13 @@
 
         window.location.href = "/Login/Login";
 
+    }
+
+    function Profile() {
+        window.location.href = "/Adminprofile/Adminprofile";
+    }
+
+    function AddClient() {
+        window.location.href = "/Registration/Register";
     }
 </script>

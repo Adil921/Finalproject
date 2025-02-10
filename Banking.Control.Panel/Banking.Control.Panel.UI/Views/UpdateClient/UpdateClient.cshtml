@@ -1,81 +1,162 @@
-﻿@* @model Banking.Control.Panel.UI.Models.Client
+﻿@model Banking.Control.Panel.UI.Models.UpdateClientRequest
 
 @{
-    ViewData["Title"] = "Update Client";
+    ViewData["Title"] = "Client Profile";
 }
 
 <h2>@ViewData["Title"]</h2>
 
-<form asp-action="UpdateClient" method="post" enctype="multipart/form-data">
+<form asp-controller="UpdateClient" asp-action="Updateclient" method="post" enctype="multipart/form-data">
     <div class="form-group">
-        <label asp-for="FirstName" class="control-label"></label>
+        <label for="ClientId">ClientId</label>
+        <input asp-for="ClientId" class="form-control" />
+        <span asp-validation-for="ClientId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="FirstName">First Name</label>
         <input asp-for="FirstName" class="form-control" />
         <span asp-validation-for="FirstName" class="text-danger"></span>
     </div>
 
     <div class="form-group">
-        <label asp-for="LastName" class="control-label"></label>
+        <label for="LastName">Last Name</label>
         <input asp-for="LastName" class="form-control" />
         <span asp-validation-for="LastName" class="text-danger"></span>
     </div>
 
     <div class="form-group">
-        <label asp-for="Email" class="control-label"></label>
-        <input asp-for="Email" class="form-control" />
-        <span asp-validation-for="Email" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="Password" class="control-label"></label>
-        <input asp-for="Password" class="form-control" type="password" />
-        <span asp-validation-for="Password" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="PersonalId" class="control-label"></label>
+        <label for="PersonalId">Personal ID</label>
         <input asp-for="PersonalId" class="form-control" />
         <span asp-validation-for="PersonalId" class="text-danger"></span>
     </div>
 
     <div class="form-group">
-        <label asp-for="ProfilePath" class="control-label"></label>
-        <input asp-for="ProfilePath" class="form-control" type="file" />
-        <span asp-validation-for="ProfilePath" class="text-danger"></span>
-    </div>
-
-    <div class="form-group">
-        <label asp-for="MobileNumber" class="control-label"></label>
+        <label for="MobileNumber">Mobile Number</label>
         <input asp-for="MobileNumber" class="form-control" />
         <span asp-validation-for="MobileNumber" class="text-danger"></span>
     </div>
 
     <div class="form-group">
-        <label asp-for="Sex" class="control-label"></label>
-        <select asp-for="Sex" class="form-control">
-            <option value="Male" @(Model.Sex == "Male" ? "selected" : "")>Male</option>
-            <option value="Female" @(Model.Sex == "Female" ? "selected" : "")>Female</option>
+        <label for="Sex">Sex</label>
+        <select class="form-control" id="Sex" name="Sex" required>
+            @if (ViewData["Sex"] != null)
+            {
+                var selectedSex = ViewData["Sex"].ToString();
+
+                if (selectedSex == "Male")
+                {
+                    <option value="Male" selected>Male</option>
+                    <option value="Female">Female</option>
+                }
+                else if (selectedSex == "Female")
+                {
+                    <option value="Male">Male</option>
+                    <option value="Female" selected>Female</option>
+                }
+                else
+                {
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                }
+            }
+            else
+            {
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            }
         </select>
         <span asp-validation-for="Sex" class="text-danger"></span>
     </div>
 
     <div class="form-group">
-        <label asp-for="Role" class="control-label"></label>
-        <select asp-for="Role" class="form-control">
-            <option value="Admin" @(Model.Role == "Admin" ? "selected" : "")>Admin</option>
-            <option value="User" @(Model.Role == "User" ? "selected" : "")>User</option>
+        <label for="Role">Role</label>
+        <select class="form-control" id="Role" name="Role" required>
+            @if (ViewData["Role"] != null)
+            {
+                var selectedRole = ViewData["Role"].ToString();
+
+                if (selectedRole == "Admin")
+                {
+                    <option value="Admin" selected>Admin</option>
+                    <option value="User">User</option>
+                }
+                else if (selectedRole == "User")
+                {
+                    <option value="Admin">Admin</option>
+                    <option value="User" selected>User</option>
+                }
+                else
+                {
+                    <option value="Admin">Admin</option>
+                    <option value="User">User</option>
+                }
+            }
+            else
+            {
+                <option value="Admin">Admin</option>
+                <option value="User">User</option>
+            }
         </select>
         <span asp-validation-for="Role" class="text-danger"></span>
     </div>
 
-    <div class="form-group form-check">
-        <input asp-for="IsActive" class="form-check-input" type="checkbox" @(Model.IsActive ? "checked" : "") />
-        <label asp-for="IsActive" class="form-check-label">Is Active</label>
+    <!-- Address Section -->
+    @{
+        if (Model.Address != null)
+        {
+            <div class="container">
+                <h2>Address</h2>
+
+                <div class="form-group">
+                    <label for="Country">AddressId</label>
+                    <input asp-for="@Model.Address.AddressId" class="form-control" />
+                    <span asp-validation-for="@Model.Address.AddressId" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="Country">Country</label>
+                    <input asp-for="@Model.Address.Country" class="form-control" />
+                    <span asp-validation-for="@Model.Address.Country" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="City">City</label>
+                    <input asp-for="@Model.Address.City" class="form-control" />
+                    <span asp-validation-for="@Model.Address.City" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="Street">Street</label>
+                    <input asp-for="@Model.Address.Street" class="form-control" />
+                    <span asp-validation-for="@Model.Address.Street" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="ZipCode">Zip Code</label>
+                    <input asp-for="@Model.Address.ZipCode" class="form-control" />
+                    <span asp-validation-for="@Model.Address.ZipCode" class="text-danger"></span>
+                </div>
+            </div>
+        }
+        else
+        {
+            <h2>Address not found</h2>
+        }
+    }
+
+
+
+    <div class="form-group">
+        <label for="Email">Email</label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
     </div>
 
-    <button type="submit" class="btn btn-primary">Save Changes</button>
+    <!-- Password field is removed from model, so it's excluded here -->
+
+    <button type="submit" class="btn btn-primary">Update Profile</button>
 </form>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
- *@

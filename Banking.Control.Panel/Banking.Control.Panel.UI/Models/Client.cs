@@ -37,10 +37,12 @@ namespace Banking.Control.Panel.UI.Models
         public string Sex { get; set; } // "Male" or "Female"
 
         //One-to-Many Relationship with Address
-        public List<Address> Address { get; set; }
+
+        [Required]
+        public List<Banking.Control.Panel.UI.Models.Address> Address { get; set; }
 
         //One-to-Many Relationship with Account
-        //public List<Account>? Accounts { get; set; }
+        public List<Account>? Accounts { get; set; }
         public string Role { get; set; } // "Admin" or "User"
 
         [DefaultValue(true)]
